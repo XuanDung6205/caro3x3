@@ -1,0 +1,104 @@
+body {
+    background-color: darkgrey;
+    margin: 30px auto 0 auto;
+}
+
+.container {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.controller {
+    /* border: 1px dashed black; */
+    width: 120px;
+    height: 550px
+        /* margin-right: 100px; */
+}
+
+.controller input[type="button"] {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: limegreen;
+    border-radius: 20px;
+    border: none;
+}
+
+.controller input[type="button"]:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.7s ease;
+}
+
+.grid {
+    border: 5px solid black;
+    width: 600px;
+    height: 600px;
+    margin-left: 90px;
+}
+
+.row {
+    /* border: 1px solid green; */
+    display: flex;
+    height: 200px;
+}
+
+.row div {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+
+}
+
+.row div:hover {
+    background-color: lightblue;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.clickedGreen {
+    background-color: lightgreen !important;
+    cursor: not-allowed !important;
+    transition: 0.5s ease-in-out !important;
+}
+
+.clickedRed {
+    background-color: rgb(255, 105, 105) !important;
+    cursor: not-allowed !important;
+    transition: 0.5s ease-in-out !important;
+}
+
+.showInformationDiv {
+    margin-left: 100px;
+}
+
+.showInfo {
+    height: 100%;
+    width: 250px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+#overlay {
+    position: fixed;
+    /* phủ toàn bộ màn hình */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.034);
+    display: none;
+    /* mặc định ẩn */
+}
